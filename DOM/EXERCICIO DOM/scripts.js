@@ -29,7 +29,7 @@ console.log(guestAll);*/
 //-----------------------------------------
 //MANIPULANDO OS ELEMENTOS
 //selecionando o primeiro elemento da lista
-const guest = document.querySelector("#guest-1 span")
+/*const guest = document.querySelector("#guest-1 span")
 
 //PEGAR O CONTEUDO DO TEXTO
 console.log(guest.textContent);
@@ -37,4 +37,20 @@ guest.textContent = "Pedro" //modifica o valor mas apaga a tag dele só coloca u
 
 console.log(guest.textContent); 
 console.log()
+*/
+
+//---------------------------------------------------
+//ADICIONANDO ESTILO PELO JS 
+const input = document.querySelector("#name")
+
+//adicionando
+input.classList.add("input-error") //adicionando uma classe css
+
+//removendo a classe
+input.classList.remove("input-error")
+
+const button = document.querySelector("button")
+//MUDANDO A COR DO BOTÃO PELO JS
+button.style.background = "red"
+
 
