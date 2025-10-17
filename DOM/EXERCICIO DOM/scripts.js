@@ -89,3 +89,22 @@ window.addEventListener("load", ()=>{
 })//ESSE METODO OBSERVA O EVENTO QUE ACONTECE NA JANELA
 
 //o EVENTLISTENER solto refere-se ao elemento DOM
+
+//--------------------------------------------------------------------
+//EVENTOS EM UM ELEMENTO ESPECIFICO
+const ul = document.querySelector("ul")
+
+//monitorando os eventos nesse elemento
+ul.addEventListener("scroll", (event)=>{
+    console.log(ul.scrollTop) //ver a distancia do topo;
+
+    if(ul.scrollTop >= 230){
+        console.log("Fim da lista");
+
+        ul.scrollTo({ //levando o usuario de volta para o topo
+            top: 0,
+            behavior: "smooth",
+        })
+    }
+})
+
