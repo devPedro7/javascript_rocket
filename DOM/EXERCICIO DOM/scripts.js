@@ -68,4 +68,16 @@ newGuest.append(guestName) //o append adiciona um novo conteudo em outro depois 
 
 guests.append(newGuest) //aqui ele adiciona na lista do html, mas ele vai sem as classes dos elementos 
 
-//
+
+//--------------------------------------------------------------------
+//MANIPULANDO ATRIBUTOS
+const input = document.querySelector("input")
+
+//desabilitando o input text
+input.setAttribute("disabled", true) //nome do atributo, valor do atributo
+
+//MUDANDO O TIPO DO INPUT
+//input.setAttribute("type", "file")
+
+//removendo um atributo
+input.removeAttribute("disabled")
