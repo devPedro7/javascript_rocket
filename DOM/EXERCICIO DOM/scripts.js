@@ -39,6 +39,7 @@ console.log(guest.textContent);
 console.log()
 */
 
+/*
 //---------------------------------------------------
 //ADICIONANDO ESTILO PELO JS 
 const input = document.querySelector("#name")
@@ -52,5 +53,19 @@ input.classList.remove("input-error")
 const button = document.querySelector("button")
 //MUDANDO A COR DO BOTÃO PELO JS
 button.style.background = "red"
+*/
 
+//Adicionando elementos no JS
+const guests = document.querySelector("ul")
 
+//CRIANDO UM ELEMENTO HTML
+const newGuest = document.createElement("li")
+newGuest.classList.add("guest")
+const guestName = document.createElement("span")
+guestName.textContent = "Pedro Lucas"
+
+newGuest.append(guestName) //o append adiciona um novo conteudo em outro depois do ultimo filho que ja tem nele
+
+guests.append(newGuest) //aqui ele adiciona na lista do html, mas ele vai sem as classes dos elementos 
+
+//
