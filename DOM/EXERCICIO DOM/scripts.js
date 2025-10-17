@@ -81,3 +81,11 @@ input.setAttribute("disabled", true) //nome do atributo, valor do atributo
 
 //removendo um atributo
 input.removeAttribute("disabled")
+
+//--------------------------------------------------------------------
+//EVENTOS
+window.addEventListener("load", ()=>{
+    console.log("A página foi carregada") //TIPO DE EVENTO, Ação(fucao)
+})//ESSE METODO OBSERVA O EVENTO QUE ACONTECE NA JANELA
+
+//o EVENTLISTENER solto refere-se ao elemento DOM
