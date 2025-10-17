@@ -96,7 +96,7 @@ const ul = document.querySelector("ul")
 
 //monitorando os eventos nesse elemento
 ul.addEventListener("scroll", (event)=>{
-    console.log(ul.scrollTop) //ver a distancia do topo;
+  //  console.log(ul.scrollTop) //ver a distancia do topo;
 
     if(ul.scrollTop >= 230){
         console.log("Fim da lista");
@@ -108,3 +108,14 @@ ul.addEventListener("scroll", (event)=>{
     }
 })
 
+
+//--------------------------------------------------------------------
+//EVENTOS DE FORMULARIO
+const form = document.querySelector("form")
+
+form.onsubmit = (event) =>{
+    event.preventDefault()
+    console.log("Você fez submit no formulario");
+}
+
+//quando criamos os EVENTOS diretamente sem o addEventListener, ele considera apenas o primeiro em vez dos outros
