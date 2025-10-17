@@ -29,3 +29,26 @@ const arrowFunctionComParametro = (nome)=>{
 console.log(mostrarMensagem2) //desta forma conseguimos ver o que tem dentro dela vê-la como função
 console.log(mostrarMensagem2()) //aqui estamos chamando o seu conteúdo
 console.log(arrowFunctionComParametro("Pedro")) //aqui estamos chamando o seu conteúdo
+
+//--------------------------------------------------------------------------------------------------------
+
+//CALLBACK FUNCTION - Quando passamos uma função como argumento para outra função
+
+//1ª forma criando a função por fora
+
+function execute(taskname, callback){
+    console.log(`Executando a tarefa:  ${taskname}`)
+
+    callback()
+}
+
+function callback(){
+    console.log("Tarefa finalizada");
+}
+
+execute("Download do arquivo...", callback)
+
+execute("Apagando o arquivo...", function(){
+    console.log("Testando o callback dentro da função como função")
+})
+
