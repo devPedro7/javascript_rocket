@@ -15,7 +15,7 @@ class Animal{
 
 class Dog extends Animal{
     //nessa classe não tem nada, porem...
-    
+
 
     //TENTANDO FAZER UMA SOBRESCRITA DO METODO
     makeNoise(){ //peguei um metodo da superclasse e adaptei ela para o cachorro
@@ -23,5 +23,15 @@ class Dog extends Animal{
     }
 }
 
+class Cat extends Animal{
+
+    makeNoise(){
+        console.log("fazendo o barulho do gato: Miau")
+    }
+}
+
 const dog = new Dog()
 dog.makeNoise()
+
+const cat = new Cat()
+cat.makeNoise()
